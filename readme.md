@@ -1,4 +1,5 @@
-# jirafa
+# kumetun
+
 Jira based maintenance and spare management
 
 ## Docker
@@ -10,7 +11,7 @@ https://docs.docker.com/compose/install/
 ## Python setup
 ```
 pyenv install 3.6.6
-pyenv virtualenv 3.6.6 jirafa
+pyenv virtualenv 3.6.6 kumetun
 pip install --upgrade pip
 pip install atlassian-python-api
 ```
@@ -21,7 +22,7 @@ docker-compose up
 ```
 ### SQL
 ```
-CREATE DATABASE jirafa
+CREATE DATABASE kumetun
   WITH OWNER = postgres
        ENCODING = 'UTF8'
        TABLESPACE = pg_default
