@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgres9:
+    image: postgres:alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data: {}
